@@ -7,6 +7,7 @@ defaults:
       layout: "default"
       author: "Sarah Murto"
       category: "Flash"
-      subtitle: cats
+subtitle: cats
+baseurl: /HistoryOfFlash_4662W
 kramdown:
   input: GFM
