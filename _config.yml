@@ -9,5 +9,6 @@ defaults:
       category: "Flash"
 subtitle: ""
 baseurl: /HistoryOfFlash_4662W
+permalink: none
 kramdown:
   input: GFM

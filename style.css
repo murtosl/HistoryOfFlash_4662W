@@ -76,3 +76,23 @@ footer{
 #content{
 	padding: 20px;
 }
+
+#skipIntroButton {
+		margin-top: 30px;
+	
+}
+#skipIntroButton iframe{
+		margin-left: 30%;
+		margin-right: 30%;
+		margin-bottom: 30px;
+}
+#skipIntroButton a{
+		padding: 20px;
+		border: 4px solid #78042A;
+		color: white;
+		font-weight: bold;
+		margin-bottom: 40px;
+		margin-left: 47%;
+		background-color: #A10539;
+		font-size: 16px;
+}
