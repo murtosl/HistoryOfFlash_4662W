@@ -10,5 +10,6 @@ defaults:
 subtitle: ""
 baseurl: /HistoryOfFlash_4662W
 permalink: none
+title: The Rise and Fall of Flash
 kramdown:
   input: GFM

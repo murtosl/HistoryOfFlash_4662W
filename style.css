@@ -2,6 +2,10 @@
 	margin: 0 auto;
 }
 
+p{
+	margin-bottom: 10px;
+}
+
 header{
 	background-color:#D10F0F;
 	background-image: url('headerBG.png');
@@ -48,6 +52,10 @@ footer{
 	text-align:center;
 }
 
+footer a{
+	color: #FFF;
+	font-weight: bold;
+}
 #middle{
 	background-color: #ddd;
 	min-height: 500px;
