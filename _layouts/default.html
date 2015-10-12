@@ -10,9 +10,19 @@
 </head>
 <body>
 	{% include header.html %}
-	<div id="container">
-		{{ content }}
-    </div>
+	<section id="middle">
+		<div id="container">
+		<nav>
+			<a href="">These</a>
+			<a href="">should</a>
+			<a href="">Be</a>
+			<a href="">Links</a>
+		</nav>
+			<section id="content">
+				{{ content }}
+			</section>
+		</div>
+	</section>
 	{% include footer.html %}
 </body>
 </html>
