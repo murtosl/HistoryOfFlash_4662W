@@ -9,6 +9,7 @@ p{
 header{
 	background-color:#D10F0F;
 	background-image: url('headerBG.png');
+	background-repeat: repeat-x;
 }
 
 header img{
@@ -19,8 +20,8 @@ header img{
 	color:white;
 	font-weight: bold;
 	position: absolute;
-	left: 500px;
-	top: 200px;
+	left: 390px;
+	top: 170px;
 	font-size: 34px;
 	font-family: 'Arial Narrow', Arial, sans-serif;
 }
@@ -106,4 +107,15 @@ footer a{
 		margin-left: 47%;
 		background-color: #A10539;
 		font-size: 16px;
+}
+
+#PluginNextNavigation{
+	float: left;
+	margin-left: 350px;
+}
+
+a {
+	color: #D10F0F;
+	text-decoration: none;
+	font-weight: bold;
 }
