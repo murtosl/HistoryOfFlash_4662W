@@ -60,6 +60,7 @@ footer a{
 #middle{
 	background-color: #ddd;
 	min-height: 500px;
+	width: 100%;
 }
 
 #container{
@@ -70,6 +71,11 @@ footer a{
 	 min-width: 320px;
 	 font-family: Tahoma, Verdana, Segoe, sans-serif;
 	 min-height: 500px;
+	display: inline-block;
+	width: 90%;
+	  margin-left: 5%;
+	  margin-right: 5%;
+	 
 }
 #container h1{
 	font-size: 16px;
@@ -118,4 +124,37 @@ a {
 	color: #D10F0F;
 	text-decoration: none;
 	font-weight: bold;
+}
+
+#quoteHeader{
+	margin-left: 35%;
+	padding-bottom: 40px !important;
+}
+
+.quote {
+	font-size: 16px !important;
+	width: 70%;
+	padding: 20px;
+	margin-bottom: 20px;
+	border: 1px solid #ccc;
+}
+
+.quoteName{
+	margin-top: 20px;
+	margin-right: 30px;
+	float: right;
+	font-style: italic;
+}
+
+.goLeft{
+	float: left;
+}
+
+.goRight{
+	float: right;
+}
+
+#MobileQuoteNextNavigation{
+	float: right;
+	
 }
