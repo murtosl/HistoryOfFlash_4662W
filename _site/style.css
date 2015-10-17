@@ -169,6 +169,10 @@ a {
 	width: 40%;
 	float: right;
 }
+.adobeAdText{
+	margin-top: 40px;
+}
+
 .adobeAdText p{
 	float: left;
 	width: 55%;
@@ -186,4 +190,9 @@ a {
 
 .smallCite {
 	font-size: 8px !important;
+}
+
+#HomeStarRunner{
+	margin-left: 25%;
+	
 }
