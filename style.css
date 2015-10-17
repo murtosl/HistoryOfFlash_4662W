@@ -26,21 +26,45 @@ header img{
 	font-family: 'Arial Narrow', Arial, sans-serif;
 }
 
+#navGroupUp{
+	float: left;
+	margin-top: 0;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #999;
+
+}
+#navGroupDown{
+	float: right;
+	margin-top: 10px;
+	margin-bottom: 0;
+	padding: 0;
+}
+
+#navGroupUp a{
+	margin-right: 30px;
+}
+#navGroupDown a{
+	margin-left: 30px;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
 nav{
-	margin-bottom: 15px;
 	margin-top: 5px;
 	text-align: center;
-	border-bottom: 1px solid #444;
+
 	margin-right: 0px;
 	min-width: 700px;
+	display: inline-block;
+	border-bottom: 3px double #bbb;
 }
 
 nav a{
 	text-decoration: none;
-	color: #333;
+	color: #D10F0F;
 	font-weight: bold;
 	padding: 3px;
-	margin-right: 30px;
+	
 }
 
 footer{
@@ -115,10 +139,6 @@ footer a{
 		font-size: 16px;
 }
 
-#PluginNextNavigation{
-	float: left;
-	margin-left: 350px;
-}
 
 a {
 	color: #D10F0F;
@@ -136,6 +156,7 @@ a {
 	padding: 20px;
 	margin-bottom: 20px;
 	border: 1px solid #ccc;
+	width: 75%;
 }
 
 .quoteName{
@@ -147,16 +168,12 @@ a {
 
 .goLeft{
 	float: left;
+	margin-right: 25%;
 }
 
 .goRight{
 	float: right;
-}
-
-#MobileQuoteNextNavigation{
-	float: right;
-	width: 600px;
-	
+	margin-left: 25%;
 }
 
 #HTML5Navigation{
@@ -169,6 +186,16 @@ a {
 	width: 40%;
 	float: right;
 	margin-top: 10%;
+}
+
+#CircleNavigation{
+	margin-top: 100px;
+	
+}
+
+
+.nxt{
+	float:right;
 }
 
 .adobeAdText p{
