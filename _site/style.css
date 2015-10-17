@@ -78,16 +78,16 @@ footer a{
 	 
 }
 #container h1{
-	font-size: 16px;
+	font-size: 18px;
 	margin-bottom: 10px;
 }
 #container h2{
-	font-size: 14px;
+	font-size: 16px;
 	margin-bottom: 10px;
 }
 
 #container p{
-	font-size: 12px;
+	font-size: 14px;
 	margin-bottom: 10px;
 }
 
@@ -168,9 +168,7 @@ a {
 #adodeAd{
 	width: 40%;
 	float: right;
-}
-.adobeAdText{
-	margin-top: 40px;
+	margin-top: 10%;
 }
 
 .adobeAdText p{
