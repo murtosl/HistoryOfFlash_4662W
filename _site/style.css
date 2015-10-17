@@ -159,6 +159,26 @@ a {
 	
 }
 
+#HTML5Navigation{
+	border-top: 1px solid #ccc;
+	float: right;
+	width: 100%;
+}
+
+#adodeAd{
+	width: 40%;
+	float: right;
+}
+.adobeAdText p{
+	float: left;
+	width: 55%;
+}
+.adobeAdText h2{
+	float: left;
+	width: 55%;
+	margin-right: 20px;
+}
+
 .center {
 	text-align:center;
 	font-style: italic;
