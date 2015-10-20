@@ -10,6 +10,10 @@ header{
 	background-color:#D10F0F;
 	background-image: url('headerBG.png');
 	background-repeat: repeat-x;
+	padding: 0;
+	margin: 0;
+	min-width: 900px;
+	overflow: none;
 }
 
 header img{
@@ -20,10 +24,20 @@ header img{
 	color:white;
 	font-weight: bold;
 	position: absolute;
-	left: 390px;
-	top: 170px;
+	left: 30%;
+	top: 0px;
 	font-size: 34px;
 	font-family: 'Arial Narrow', Arial, sans-serif;
+	background-image: url('title.png');
+	width: 500px;
+	height: 150px;
+	background-repeat: none;
+	
+}
+
+#header_subtitle h4{
+	margin-top: 0px;
+	padding-top: 90px;	
 }
 
 #navGroupUp{
