@@ -36,6 +36,7 @@ header img{
 	text-align: center;
 }
 
+
 #header_subtitle h4{
 	color:white;
 	font-weight: bold;
@@ -49,7 +50,6 @@ header img{
 #navGroupUp{
 	float: left;
 	margin-top: 0;
-	margin-bottom: 10px;
 	border-bottom: 1px solid #999;
 
 }
@@ -72,7 +72,7 @@ header img{
 nav{
 	margin-top: 5px;
 	text-align: center;
-
+	font-size: 12px !important;
 	margin-right: 0px;
 	min-width: 650px;
 	display: inline-block;
@@ -123,6 +123,7 @@ footer a{
 	width: 90%;
 	  margin-left: 5%;
 	  margin-right: 5%;
+	  text-align: left;
 	 
 }
 #container h1{
@@ -168,9 +169,6 @@ a {
 	font-weight: bold;
 }
 
-#quoteHeader{
-	margin-left: 35%;
-}
 
 .quote {
 	font-size: 16px !important;
@@ -191,11 +189,13 @@ a {
 .goLeft{
 	float: left;
 	margin-right: 25%;
+	text-align: right;
 }
 
 .goRight{
 	float: right;
 	margin-left: 25%;
+	text-align:left;
 }
 
 #HTML5Navigation{
@@ -243,3 +243,6 @@ a {
 	font-size: 8px !important;
 }
 
+#HomeStarRunner{
+	text-align: center;
+}
