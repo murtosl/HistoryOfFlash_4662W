@@ -169,6 +169,23 @@ a {
 	font-weight: bold;
 }
 
+.blockquote{
+	padding: 10px;
+	width: 85%;
+	text-align: justify;
+}
+
+.wideBox{
+width: 70%;
+	padding: 20px;
+	margin-bottom: 40px;
+	margin-top: 40px;
+	border: 1px solid #ccc;
+	width: 75%;
+font-size: 18px !important;
+
+}
+
 
 .quote {
 	font-size: 16px !important;
@@ -177,6 +194,12 @@ a {
 	margin-bottom: 20px;
 	border: 1px solid #ccc;
 	width: 75%;
+	text-align: justify;
+}
+
+#quoteHeader{
+	text-align: center;
+	
 }
 
 .quoteName{
@@ -189,13 +212,11 @@ a {
 .goLeft{
 	float: left;
 	margin-right: 25%;
-	text-align: right;
 }
 
 .goRight{
 	float: right;
 	margin-left: 25%;
-	text-align:left;
 }
 
 #HTML5Navigation{
@@ -205,9 +226,15 @@ a {
 }
 
 #adodeAd{
-	width: 40%;
+	display: inline-block;
 	float: right;
 	margin-top: 10%;
+	width: 40%;
+	text-align: center;
+}
+
+#adodeAd img{
+		width: 100%;
 }
 
 #CircleNavigation{
@@ -238,6 +265,7 @@ a {
 	text-align:center;
 	font-style: italic;
 }
+
 
 .smallCite {
 	font-size: 8px !important;
