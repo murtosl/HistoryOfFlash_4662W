@@ -69,6 +69,7 @@ header img{
 	margin-bottom: 0;
 }
 
+
 nav{
 	margin-top: 5px;
 	text-align: center;
@@ -106,9 +107,9 @@ footer a{
 	min-height: 500px;
 	width: 100%;
 	text-align:center; /* display:inline-block will only be centered with this setting */
-	min-width: 710px;
 	margin-top: 0px;
 	padding-top: 0px;
+	 min-width: 320px;
 }
 
 #container{
@@ -251,15 +252,6 @@ font-size: 18px !important;
 	
 }
 
-.adobeAdText p{
-	float: left;
-	width: 55%;
-}
-.adobeAdText h2{
-	float: left;
-	width: 55%;
-	margin-right: 20px;
-}
 
 .center {
 	text-align:center;
@@ -273,4 +265,67 @@ font-size: 18px !important;
 
 #HomeStarRunner{
 	text-align: center;
+}
+
+@media (max-width: 700px) {
+	*{
+	margin: 0;
+}
+	
+	  #normalNav{
+	  display:none;
+	}
+	
+	nav{
+		border-bottom: none;
+	}
+	
+	header{
+	min-width: 320px;
+}
+
+header img{
+	display:none;
+}
+
+#header_subtitle{
+	background-image: none;
+	width: 100%;
+	height: 50px;
+	background-repeat: none;
+}
+
+#header_subtitle h4:before{
+	content: "The Rise and Fall of Flash - ";
+}
+
+#header_subtitle h4{
+	padding-top: 10px;
+	font-size: 16px;	
+}
+
+#adodeAd{
+	width: 100%;
+	text-align: center;
+}
+
+#adodeAd img{
+		width: 100%;
+}
+	
+.adobeAdText p{
+}
+.adobeAdText h2{
+}
+#container{
+	border-right: none;
+	border-left: none;
+	padding: 0px;
+	display: inline-block;
+	  margin-left: 0;
+	  margin-right: 0;
+	  text-align: left;
+	 
+}
+
 }
