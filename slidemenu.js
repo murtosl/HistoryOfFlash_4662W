@@ -1,7 +1,7 @@
 var slideMenu=function(){
 	var sp,st,t,m,sa,l,w,sw,ot;
 	return{
-		build:function(sm,sw,mt,s,sl,h){
+		build:function(sm,sw,mt,s,sl,h, first){
 			sp=s; st=sw; t=mt;
 			m=document.getElementById(sm);
 			sa=m.getElementsByTagName('li');
@@ -12,9 +12,12 @@ var slideMenu=function(){
 		},
 		timer:function(s){s.onmouseover=function(){clearInterval(m.timer);m.timer=setInterval(function(){slideMenu.slide(s)},t)}},
 		slide:function(s){
+			if(s == undefined || s == null) {
+				s = sa[2];
+			} 
 			var cw=parseInt(s.style.width,'10');
 			
-			if(cw<st){console.log(st);
+			if(cw<st){
 				
 				var owt=0; var i=0;
 				for(i;i<l;i++){
