@@ -36,7 +36,6 @@ header img{
 	text-align: center;
 }
 
-
 #header_subtitle h4{
 	color:white;
 	font-weight: bold;
@@ -47,45 +46,34 @@ header img{
 	text-shadow: 0px 3px #444;
 }
 
-#navGroupUp{
-	float: left;
-	margin-top: 0;
-	border-bottom: 1px solid #999;
-
-}
-#navGroupDown{
-	float: right;
-	margin-top: 10px;
-	margin-bottom: 0;
-	padding: 0;
-}
-
-#navGroupUp a{
-	margin-right: 30px;
-}
-#navGroupDown a{
-	margin-left: 30px;
-	padding-bottom: 0;
-	margin-bottom: 0;
-}
-
 
 nav{
 	margin-top: 5px;
+	width: 100%;
 	text-align: center;
-	font-size: 12px !important;
-	margin-right: 0px;
 	min-width: 650px;
-	display: inline-block;
 	border-bottom: 3px double #bbb;
 }
 
+.rotatedText {
+	writing-mode:tb-rl;
+    -webkit-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform:rotate(90deg);
+    transform: rotate(90deg);
+    white-space:nowrap;
+	height: 100%;
+}
+
 nav a{
+	background-color: #eee;
+	border: 2px solid grey;
 	text-decoration: none;
 	color: #D10F0F;
 	font-weight: bold;
 	padding: 3px;
-	
+	font-size: 12px !important;
 }
 
 footer{
@@ -186,6 +174,13 @@ width: 70%;
 
 }
 
+#sm-wrapper{
+	display:inline-block;
+}
+
+#mob-wrapper{
+		display: none;
+	}
 
 .quote {
 	width: 70%;
@@ -275,9 +270,33 @@ width: 70%;
 	
 	nav{
 		border-bottom: none;
+		margin: 0;
+		text-align: center;
+		min-width: 300px;
+		margin-top: 2px;
+	}	
+	.rotatedText {
+	}
+
+	#sm-wrapper{
+		display: none;
+	}
+	#mob-wrapper{
+		display: inline-block;
 	}
 	
-	header{
+nav a{
+	background-color: #ddd;
+	border: 0px solid grey;
+	text-decoration: none;
+	color: #D10F0F;
+	font-weight: bold;
+	padding: 3px;
+	font-size: 12px !important;
+}
+
+	
+header{
 	min-width: 320px;
 }
 
