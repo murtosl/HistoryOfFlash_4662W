@@ -1,19 +1,20 @@
 var slideMenu=function(){
-	var sp,st,t,m,sa,l,w,sw,ot;
+	var sp,st,t,m,sa,l,w,sw, pg;
 	return{
-		build:function(sm,sw,mt,s,sl,h, first){
-			sp=s; st=sw; t=mt;
+		build:function(sm,sw,mt,s,sl,h, p){
+			sp=s; st=sw; t=mt; pg = p;
 			m=document.getElementById(sm);
 			sa=m.getElementsByTagName('li');
 			l=sa.length; w=m.offsetWidth; sw=w/l;
 			ot=Math.floor((w-st)/(l-1)); var i=0;
+			sa[pg].id = "currentPage"
 			for(i;i<l;i++){s=sa[i]; s.style.width=sw+'px'; this.timer(s)}
 			if(sl!=null){m.timer=setInterval(function(){slideMenu.slide(sa[sl-1])},t)}
 		},
 		timer:function(s){s.onmouseover=function(){clearInterval(m.timer);m.timer=setInterval(function(){slideMenu.slide(s)},t)}},
 		slide:function(s){
 			if(s == undefined || s == null) {
-				s = sa[2];
+				s = sa[pg];
 			} 
 			var cw=parseInt(s.style.width,'10');
 			

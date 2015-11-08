@@ -13,9 +13,39 @@
 <body>
 	
 	<script type="text/javascript">
-	$(window).load(function() {
-		slideMenu.build('sm',200,10,10,10,10);
+	function slideIt(){
+		var navIndex = 0;
+		
+		
+		
+		slideMenu.build('sm',200,10,10,10,10, navIndex);
 		$('.rotatedText:first').trigger('mouseenter');
+	}
+	
+	var eventFired = 0;
+	
+	$(window).load(function() {
+		if ($(window).width() > 600) {
+			slideIt();
+		}
+		
+		$(window).on('resize', function() {
+			if (!eventFired) {
+			if ($(window).width() > 600) {
+				slideIt();
+			} 
+		}
+		});
+
+		$('#navButton').click(function(){
+			if($(this).text()[1] == '+'){
+				$(this).text(' - Sections - ');
+				$('#navLinks').show();
+			} else {
+				$(this).text(' + Sections + ');
+				$('#navLinks').hide();
+			}
+		});
 		
 		$('#sm-wrapper').click(function(){
 			var grab = $(this).find('li').not('.rotatedText').find('a').attr('href');
@@ -40,18 +70,19 @@
 			<nav>
 <div id="sm-wrapper">
 	<ul id="sm" class="sm">
-		<li class="rotatedText a"><a href="/HistoryOfFlash_4662W/">Intro</a></li>
-		<li class="rotatedText b"><a href="/HistoryOfFlash_4662W/plugin/Plugins.html">Plug-Ins</a></li>
-		<li class="rotatedText c"><a href="/HistoryOfFlash_4662W/design/Designers.html">Design Revolution</a></li>
-		<li class="rotatedText d"><a href="/HistoryOfFlash_4662W/usability/Usability.html">Usability Focus</a></li>
-		<li class="rotatedText e"><a href="/HistoryOfFlash_4662W/html5/MobileQuotes.html">A Mobile Future</a></li>
-		<li class="rotatedText f"><a href="/HistoryOfFlash_4662W/html5/FutureThatWasnt.html">The Future That Wasn't</a></li>
-		<li class="rotatedText g"><a href="/HistoryOfFlash_4662W/html5/HTML5.html">The State of Today</a></li>
-		<li class="rotatedText h"><a href="/HistoryOfFlash_4662W/circle/FullCircle.html">Coming Full Circle</a></li>
+		<li class="rotatedText a"><a href="/HistoryOfFlash_4662W/"><span class="bigCircle">&#9702;</span>Intro</a></li>
+		<li class="rotatedText b"><a href="/HistoryOfFlash_4662W/plugin/Plugins.html"><span class="bigCircle">&#9702;</span>Plug-Ins</a></li>
+		<li class="rotatedText c"><a href="/HistoryOfFlash_4662W/design/Designers.html"><span class="bigCircle">&#9702;</span>Design Revolution</a></li>
+		<li class="rotatedText d"><a href="/HistoryOfFlash_4662W/usability/Usability.html"><span class="bigCircle">&#9702;</span>Usability Focus</a></li>
+		<li class="rotatedText e"><a href="/HistoryOfFlash_4662W/html5/MobileQuotes.html"><span class="bigCircle">&#9702;</span>A Mobile Future</a></li>
+		<li class="rotatedText f"><a href="/HistoryOfFlash_4662W/html5/FutureThatWasnt.html"><span class="bigCircle">&#9702;</span>The Future That Wasn't</a></li>
+		<li class="rotatedText g"><a href="/HistoryOfFlash_4662W/html5/HTML5.html"><span class="bigCircle">&#9702;</span>The State of Today</a></li>
+		<li class="rotatedText h"><a href="/HistoryOfFlash_4662W/circle/FullCircle.html"><span class="bigCircle">&#9702;</span>Coming Full Circle</a></li>
 	</ul>
 </div>
 <div id="mob-wrapper">
-	<p><a href="/HistoryOfFlash_4662W/">Intro</a></br>
+<p id="navButton"> - Sections - </p>
+	<p id="navLinks"><a href="/HistoryOfFlash_4662W/">Intro</a></br>
 		<a href="/HistoryOfFlash_4662W/plugin/Plugins.html">Plug-Ins</a><br/>
 		<a href="/HistoryOfFlash_4662W/design/Designers.html">Design Revolution</a><br/>
 		<a href="/HistoryOfFlash_4662W/usability/Usability.html">Usability Focus</a><br/>

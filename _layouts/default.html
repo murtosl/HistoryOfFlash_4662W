@@ -19,9 +19,41 @@
 <body>
 	
 	<script type="text/javascript">
-	$(window).load(function() {
-		slideMenu.build('sm',200,10,10,10,10);
+	function slideIt(){
+		var navIndex = 0;
+		
+		{% if page.navIndex != nil %}
+			navIndex = {{ page.navIndex }};
+		{% endif %}
+		
+		slideMenu.build('sm',200,10,10,10,10, navIndex);
 		$('.rotatedText:first').trigger('mouseenter');
+	}
+	
+	var eventFired = 0;
+	
+	$(window).load(function() {
+		if ($(window).width() > 600) {
+			slideIt();
+		}
+		
+		$(window).on('resize', function() {
+			if (!eventFired) {
+			if ($(window).width() > 600) {
+				slideIt();
+			} 
+		}
+		});
+
+		$('#navButton').click(function(){
+			if($(this).text()[1] == '+'){
+				$(this).text(' - Sections - ');
+				$('#navLinks').show();
+			} else {
+				$(this).text(' + Sections + ');
+				$('#navLinks').hide();
+			}
+		});
 		
 		$('#sm-wrapper').click(function(){
 			var grab = $(this).find('li').not('.rotatedText').find('a').attr('href');
