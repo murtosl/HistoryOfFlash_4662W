@@ -13,8 +13,9 @@
 <body>
 	
 	<script type="text/javascript">
-	function slideIt(){
+	function slideIt(){ //Function to set up fancy navigation
 		var navIndex = 0;
+		$('#sm-wrapper').show();
 		
 		
 			navIndex = 1;
@@ -24,9 +25,9 @@
 		$('.rotatedText:first').trigger('mouseenter');
 	}
 	
-	var eventFired = 0;
+	var eventFired = 0; //Has fancy navigation loaded.
 	
-	$(window).load(function() {
+	$(window).load(function() {	
 		if ($(window).width() > 600) {
 			slideIt();
 		}
@@ -51,7 +52,6 @@
 		
 		$('#sm-wrapper').click(function(){
 			var grab = $(this).find('li').not('.rotatedText').find('a').attr('href');
-			console.log(grab);
 			window.location = grab;
 		});
 	});
@@ -70,7 +70,7 @@
 	<section id="middle">
 		<div id="container">
 			<nav>
-<div id="sm-wrapper">
+<div id="sm-wrapper" style="display:none;"> <!-- Inline Style for Javascript purposes. Will default to showing mobile navigation if Javascript disabled. JQuery likes this done via inline.-->
 	<ul id="sm" class="sm">
 		<li class="rotatedText a"><a href="/HistoryOfFlash_4662W/"><span class="bigCircle">&#9702;</span>Intro</a></li>
 		<li class="rotatedText b"><a href="/HistoryOfFlash_4662W/plugin/Plugins.html"><span class="bigCircle">&#9702;</span>Plug-Ins</a></li>

@@ -19,8 +19,9 @@
 <body>
 	
 	<script type="text/javascript">
-	function slideIt(){
+	function slideIt(){ //Function to set up fancy navigation
 		var navIndex = 0;
+		$('#sm-wrapper').show();
 		
 		{% if page.navIndex != nil %}
 			navIndex = {{ page.navIndex }};
@@ -30,9 +31,9 @@
 		$('.rotatedText:first').trigger('mouseenter');
 	}
 	
-	var eventFired = 0;
+	var eventFired = 0; //Has fancy navigation loaded.
 	
-	$(window).load(function() {
+	$(window).load(function() {	
 		if ($(window).width() > 600) {
 			slideIt();
 		}
@@ -57,7 +58,6 @@
 		
 		$('#sm-wrapper').click(function(){
 			var grab = $(this).find('li').not('.rotatedText').find('a').attr('href');
-			console.log(grab);
 			window.location = grab;
 		});
 	});
