@@ -271,6 +271,18 @@ a {
 	float: left;
 	width: 40%;
 }
+@media (max-width: 890px) {
+#HomeStarText{
+	padding-top: 0px;
+	float: left;
+	width: 100%;
+}
+#HomeStarRunner{
+	text-align: center;
+	float: none;
+}
+
+}
 
 @media (max-width: 600px) {
 	*{
@@ -354,11 +366,7 @@ header img{
 #adodeAd img{
 		width: 100%;
 }
-#HomeStarText{
-	padding-top: 0px;
-	float: left;
-	width: 100%;
-}
+
 	
 .adobeAdText p{
 }
