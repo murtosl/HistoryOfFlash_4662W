@@ -46,7 +46,7 @@ header img {
 	text-shadow: 0px 3px #444;
 }
 
-nav {
+#top {
 	margin-top: 5px;
 	width: 100%;
 	text-align: center;
@@ -73,7 +73,7 @@ nav {
 	background-color: #bbb;
 }
 
-nav a {
+#top a {
 	background-color: #eee;
 	border: 1px solid black;
 	text-decoration: none;
@@ -293,7 +293,7 @@ a {
 	  display:none;
 	}
 	
-	nav{
+#top{
 		border-bottom: none;
 		margin: 0;
 		text-align: center;
@@ -322,7 +322,7 @@ a {
 		cursor: pointer;
 	}
 	
-nav a{
+#top a{
 	background-color: #ddd;
 	border: 0px solid grey;
 	text-decoration: none;
