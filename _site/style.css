@@ -105,6 +105,8 @@ footer
 	margin: 0px;
 	padding: 15px;
 	text-align: center;
+	background-image: url('headerBG.png');
+	background-repeat: repeat-x;
 }
 footer a
 {
