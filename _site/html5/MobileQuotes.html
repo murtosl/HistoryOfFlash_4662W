@@ -1,65 +1,62 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>
+	<head>
+		<title>
+			
 				The Rise and Fall of Flash - A Mobile Future
 			
-	</title>
-	<link rel="stylesheet" href="/HistoryOfFlash_4662W/style.css" />
-	<link rel="stylesheet" type="text/css" href="/HistoryOfFlash_4662W/slidemenu.css" />
-    <script type="text/javascript" src="/HistoryOfFlash_4662W/slidemenu.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-</head>
-<body>
-	
-	<script type="text/javascript">
-	function slideIt(){ //Function to set up fancy navigation
-		var navIndex = 0;
-		$('#sm-wrapper').show();
+		</title>
+		<link rel="stylesheet" href="/HistoryOfFlash_4662W/style.css" />
+		<link rel="stylesheet" type="text/css" href="/HistoryOfFlash_4662W/slidemenu.css" />
+		<script type="text/javascript" src="/HistoryOfFlash_4662W/slidemenu.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function slideIt(){ //Function to set up fancy navigation
+				var navIndex = 0;
+				$('#sm-wrapper').show();
 		
+				
+					navIndex = 4; //Page index provided in Jekyll post header
+				
 		
-			navIndex = 4;
-		
-		
-		slideMenu.build('sm',200,10,10,10,10, navIndex);
-		$('.rotatedText:first').trigger('mouseenter');
-	}
-	
-	var eventFired = 0; //Has fancy navigation loaded.
-	
-	$(window).load(function() {	
-		if ($(window).width() > 600) {
-			slideIt();
-			eventFired = 1;
-		}
-		
-		$(window).on('resize', function() {
-			if (!eventFired) {
-			if ($(window).width() > 600) {
-				slideIt();
-				eventFired = 1;
-			} 
-		}
-		});
-
-		$('#navButton').click(function(){
-			if($(this).text()[1] == '+'){
-				$(this).text(' - Sections - ');
-				$('#navLinks').show();
-			} else {
-				$(this).text(' + Sections + ');
-				$('#navLinks').hide();
+				slideMenu.build('sm',200,10,10,10,10, navIndex);
 			}
-		});
-		
-		$('#sm-wrapper').click(function(){
-			var grab = $(this).find('li').not('.rotatedText').find('a').attr('href');
-			window.location = grab;
-		});
-	});
-	</script>
 	
-	<header>
+			var eventFired = 0; //Has fancy navigation loaded.
+	
+			$( document ).ready(function() {	//Window load is pretty fast on this site.
+				if ($(window).width() > 600) {
+					slideIt();
+					eventFired = 1;
+				}
+		
+				$(window).on('resize', function() {
+					if (!eventFired && $(window).width() > 600) {
+						slideIt();
+						eventFired = 1;
+					}
+				});
+
+				$('#navButton').click(function(){
+					if($(this).text()[1] == '+'){
+						$(this).text(' - Sections - ');
+						$('#navLinks').show();
+					} else {
+						$(this).text(' + Sections + ');
+						$('#navLinks').hide();
+					}
+				});
+		
+				$('#sm-wrapper').click(function(){
+					var grab = $(this).find('li').not('.rotatedText').find('a').attr('href');
+					window.location = grab;
+				});
+			});
+		</script>
+	
+		<header>
 		<a href="/HistoryOfFlash_4662W/"><img src="/HistoryOfFlash_4662W/header.png" alt="Flash Logo (turned)"></a>
 		<section id="header_subtitle">
 			
@@ -69,9 +66,9 @@
 </header>
 
 
-	<section id="middle">
-		<div id="container">
-			<nav id="top">
+		<section id="middle">
+			<div id="container">
+				<nav id="top">
 	<div id="sm-wrapper" style="display:none;"> <!-- Inline Style for Javascript purposes. Will default to showing mobile navigation if Javascript disabled. JQuery likes this done via inline.-->
 		<ul id="sm" class="sm">
 			<li class="rotatedText a"><a href="/HistoryOfFlash_4662W/"><span class="bigCircle">&#9702;</span>Intro</a></li>
@@ -100,57 +97,57 @@
 </nav>
 
 
-			<section id="content">
-				<p class="center">For Flash's 10th Anniversary in 2006, Adobe asked Flash designers and developers</p>
+				<section id="content">
+					<p class="center">For Flash's 10th Anniversary in 2006, Adobe asked Flash designers and developers</p>
 
 <h1 id="quoteHeader">Where do you see Flash in 10 years?</h1>
 <p class="smallCite center">(Blank et al.; Balkan et al.)</p>
 
 <div id="quotes">
-<p class="quote goLeft">
-Everywhere?<br/>
-Seriously, Flash is spreading from the Internet onto the desktop... and into phones, embedded systems, and appliances. There's just so much opportunity for this technology.
-<br/><span class="quoteName"> -Grant Skinner</span>
-</p>
+	<p class="quote goLeft">
+		Everywhere?<br/>
+		Seriously, Flash is spreading from the Internet onto the desktop... and into phones, embedded systems, and appliances. There's just so much opportunity for this technology.
+		<br/><span class="quoteName"> -Grant Skinner</span>
+	</p>
 
-<p class="quote goRight">
-Here in Japan, more and more people are connecting to the Internet using mobile phones. I forecast that in the near future mobile gadgets will become the main access point to the Internet rather than personal computers. When that happens, Flash will become an important tool for making mobile device interfaces more interactive and easier to navigate.
-<br/><span class="quoteName"> -Shin Matsumura</span>
-</p>
-
-
-<p class="quote goLeft">
-Flash will be built into every mobile phone, so you'll be able to do everything from remotely controlling the temperature of your refrigerator to playing multiplayer games with your friends, to having a nice video chat with your mom. With the speed at which the technology is progressing now, this could all feasibly become a reality in less than five years.
-<br/><span class="quoteName"> -Lisa Larson</span>
-</p>
+	<p class="quote goRight">
+		Here in Japan, more and more people are connecting to the Internet using mobile phones. I forecast that in the near future mobile gadgets will become the main access point to the Internet rather than personal computers. When that happens, Flash will become an important tool for making mobile device interfaces more interactive and easier to navigate.
+		<br/><span class="quoteName"> -Shin Matsumura</span>
+	</p>
 
 
-<p class="quote goRight">
-I see Flash continuing to expand into device markets and being on literally every device that requires a user interface. I see native desktop applications being replaced by web-enabled versions that work as well on your desktop as they do on your mobile phone.
-<br/><span class="quoteName">- Darron Schall</span>
-</p>
+	<p class="quote goLeft">
+		Flash will be built into every mobile phone, so you'll be able to do everything from remotely controlling the temperature of your refrigerator to playing multiplayer games with your friends, to having a nice video chat with your mom. With the speed at which the technology is progressing now, this could all feasibly become a reality in less than five years.
+		<br/><span class="quoteName"> -Lisa Larson</span>
+	</p>
 
-<p class="center">
-The users of Flash, whether designers or developers, clearly saw the future as going mobile. So what went wrong?
-</p>
 
+	<p class="quote goRight">
+		I see Flash continuing to expand into device markets and being on literally every device that requires a user interface. I see native desktop applications being replaced by web-enabled versions that work as well on your desktop as they do on your mobile phone.
+		<br/><span class="quoteName">- Darron Schall</span>
+	</p>
+
+	<p class="center">
+		The users of Flash, whether designers or developers, clearly saw the future as going mobile. So what went wrong?
+	</p>
 </div>
 
 
 <nav id="MobileQuoteNextNavigation" class="nextNavigation">
-<hr/>
+	<hr/>
 	<a class="prev" href="/HistoryOfFlash_4662W/usability/Usability.html">Prev: Usability Focus</a>
 	<a class="nxt" href="/HistoryOfFlash_4662W/html5/FutureThatWasnt.html">Next: The Future That Wasn't</a>
 </nav>
-			</section>
-		</div>
-	</section>
-	
+				</section>
+			</div>
+		</section>
+		
 <footer>
-		<p><a href="/HistoryOfFlash_4662W/cites/Citations.html">Works Cited</a> <br/>Created by Sarah Murto. Fall 2015. For WRIT 4662W - Chris Lundgren;
+		<p><a href="/HistoryOfFlash_4662W/cites/Citations.html">Works Cited</a> 
+		<br/>Created by Sarah Murto. Fall 2015. For WRIT 4662W - Chris Lundgren;
 		University of Minnesota - Department of Writing Studies. Draft 2.</p>
 </footer>
 
 
-</body>
+	</body>
 </html>

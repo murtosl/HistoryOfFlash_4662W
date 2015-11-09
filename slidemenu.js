@@ -1,4 +1,4 @@
-var slideMenu=function(){
+var slideMenu=function(){ //This calculates the width of items in the navigation.
 	var sp,st,t,m,sa,l,w,sw, pg;
 	return{
 		build:function(sm,sw,mt,s,sl,h, p){

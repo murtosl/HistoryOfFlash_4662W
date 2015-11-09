@@ -1,65 +1,62 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>
+	<head>
+		<title>
+			
 				The Rise and Fall of Flash - Usability Focus
 			
-	</title>
-	<link rel="stylesheet" href="/HistoryOfFlash_4662W/style.css" />
-	<link rel="stylesheet" type="text/css" href="/HistoryOfFlash_4662W/slidemenu.css" />
-    <script type="text/javascript" src="/HistoryOfFlash_4662W/slidemenu.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-</head>
-<body>
-	
-	<script type="text/javascript">
-	function slideIt(){ //Function to set up fancy navigation
-		var navIndex = 0;
-		$('#sm-wrapper').show();
+		</title>
+		<link rel="stylesheet" href="/HistoryOfFlash_4662W/style.css" />
+		<link rel="stylesheet" type="text/css" href="/HistoryOfFlash_4662W/slidemenu.css" />
+		<script type="text/javascript" src="/HistoryOfFlash_4662W/slidemenu.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function slideIt(){ //Function to set up fancy navigation
+				var navIndex = 0;
+				$('#sm-wrapper').show();
 		
+				
+					navIndex = 3; //Page index provided in Jekyll post header
+				
 		
-			navIndex = 3;
-		
-		
-		slideMenu.build('sm',200,10,10,10,10, navIndex);
-		$('.rotatedText:first').trigger('mouseenter');
-	}
-	
-	var eventFired = 0; //Has fancy navigation loaded.
-	
-	$(window).load(function() {	
-		if ($(window).width() > 600) {
-			slideIt();
-			eventFired = 1;
-		}
-		
-		$(window).on('resize', function() {
-			if (!eventFired) {
-			if ($(window).width() > 600) {
-				slideIt();
-				eventFired = 1;
-			} 
-		}
-		});
-
-		$('#navButton').click(function(){
-			if($(this).text()[1] == '+'){
-				$(this).text(' - Sections - ');
-				$('#navLinks').show();
-			} else {
-				$(this).text(' + Sections + ');
-				$('#navLinks').hide();
+				slideMenu.build('sm',200,10,10,10,10, navIndex);
 			}
-		});
-		
-		$('#sm-wrapper').click(function(){
-			var grab = $(this).find('li').not('.rotatedText').find('a').attr('href');
-			window.location = grab;
-		});
-	});
-	</script>
 	
-	<header>
+			var eventFired = 0; //Has fancy navigation loaded.
+	
+			$( document ).ready(function() {	//Window load is pretty fast on this site.
+				if ($(window).width() > 600) {
+					slideIt();
+					eventFired = 1;
+				}
+		
+				$(window).on('resize', function() {
+					if (!eventFired && $(window).width() > 600) {
+						slideIt();
+						eventFired = 1;
+					}
+				});
+
+				$('#navButton').click(function(){
+					if($(this).text()[1] == '+'){
+						$(this).text(' - Sections - ');
+						$('#navLinks').show();
+					} else {
+						$(this).text(' + Sections + ');
+						$('#navLinks').hide();
+					}
+				});
+		
+				$('#sm-wrapper').click(function(){
+					var grab = $(this).find('li').not('.rotatedText').find('a').attr('href');
+					window.location = grab;
+				});
+			});
+		</script>
+	
+		<header>
 		<a href="/HistoryOfFlash_4662W/"><img src="/HistoryOfFlash_4662W/header.png" alt="Flash Logo (turned)"></a>
 		<section id="header_subtitle">
 			
@@ -69,9 +66,9 @@
 </header>
 
 
-	<section id="middle">
-		<div id="container">
-			<nav id="top">
+		<section id="middle">
+			<div id="container">
+				<nav id="top">
 	<div id="sm-wrapper" style="display:none;"> <!-- Inline Style for Javascript purposes. Will default to showing mobile navigation if Javascript disabled. JQuery likes this done via inline.-->
 		<ul id="sm" class="sm">
 			<li class="rotatedText a"><a href="/HistoryOfFlash_4662W/"><span class="bigCircle">&#9702;</span>Intro</a></li>
@@ -100,8 +97,8 @@
 </nav>
 
 
-			<section id="content">
-				<h2>99% Bad</h2>
+				<section id="content">
+					<h2>99% Bad</h2>
  
 <p>In late 2000, Jakob Nielsen wrote an influential essay regarding the use of Flash titled <a href="http://www.nngroup.com/articles/flash-99-percent-bad/" target="_blank">Flash: 99% Bad</a>. In it he berates Flash as a "usability disease," noting designers mostly use Flash for gratuitous animation, frivolous intros, and nonstandard GUI layouts. He also rebukes the use of Flash that ignores usability standards, disregards disability access and renders browser features like 'find' worthless. Lastly, he asserts that having a Flash website takes away from the site's purpose, citing that Flash content is not frequently updated, nor helps customers find needed information.</p>
 
@@ -137,15 +134,16 @@ held and equally valid interpretations at any given historical juncture (Haas 22
 	<a class="nxt" href="/HistoryOfFlash_4662W/html5/MobileQuotes.html">Next: A Mobile Future</a>
 </nav>
 
-			</section>
-		</div>
-	</section>
-	
+				</section>
+			</div>
+		</section>
+		
 <footer>
-		<p><a href="/HistoryOfFlash_4662W/cites/Citations.html">Works Cited</a> <br/>Created by Sarah Murto. Fall 2015. For WRIT 4662W - Chris Lundgren;
+		<p><a href="/HistoryOfFlash_4662W/cites/Citations.html">Works Cited</a> 
+		<br/>Created by Sarah Murto. Fall 2015. For WRIT 4662W - Chris Lundgren;
 		University of Minnesota - Department of Writing Studies. Draft 2.</p>
 </footer>
 
 
-</body>
+	</body>
 </html>
