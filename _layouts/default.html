@@ -36,6 +36,7 @@
 	$(window).load(function() {	
 		if ($(window).width() > 600) {
 			slideIt();
+			eventFired = 1;
 		}
 		
 		$(window).on('resize', function() {
