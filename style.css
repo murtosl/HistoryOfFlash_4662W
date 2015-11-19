@@ -168,6 +168,9 @@ a
 	color: #D10F0F;
 	font-weight: bold;
 	text-decoration: none;
+	 overflow-wrap: break-word;
+  word-wrap: break-word;
+
 }
 .blockquote
 {
