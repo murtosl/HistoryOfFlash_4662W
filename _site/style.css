@@ -6,6 +6,9 @@ p
 {
 	margin-bottom: 10px;
 }
+nav p{
+	text-align: center
+}
 body
 {
 	background-color: #D10F0F;
@@ -295,21 +298,7 @@ a
 	{
 		margin: 0;
 	}
-	#normalNav
-	{
-		display: none;
-	}
-	#top
-	{
-		border-bottom: none;
-		margin: 0;
-		margin-top: 2px;
-		min-width: 300px;
-		text-align: center;
-	}
-	.rotatedText
-	{
-	}
+
 	#sm-wrapper
 	{
 		display: none;
